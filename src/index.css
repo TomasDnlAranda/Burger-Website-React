@@ -6,6 +6,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
+	background-image: url(.//image/background.jpg);
 }
 
 code {
@@ -16,4 +17,5 @@ code {
 	--navbar-bg-color: #0c0c0c;
 	--navbar-text-color: #fff;
 	--navbar-text-color-hover: #e3cb57;
+	--main-text-subtitule-color: rgb(182, 182, 182);
 }
