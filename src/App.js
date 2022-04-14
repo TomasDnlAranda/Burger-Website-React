@@ -1,4 +1,4 @@
-import './App.css';
+import Main from './components/Main';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
 		<>
 			<div className="app__container">
 				<Navbar />
+				<Main />
 			</div>
 		</>
 	);
