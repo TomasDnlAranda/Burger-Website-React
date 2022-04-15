@@ -38,7 +38,8 @@ const Main = () => {
 				<h1 className="main__title">SO MEATY YOU'LL GO CRAZY</h1>
 				<p className="main__subtitle">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
+					ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididu
 				</p>
 				<button className="main__btn">Our Menu</button>
 			</div>
