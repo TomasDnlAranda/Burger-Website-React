@@ -58,7 +58,7 @@ const Menu = () => {
 	return (
 		<section className="menu">
 			<div className="menu__container-text">
-				<img src={TITLE} className="menu__img" />
+				<img src={TITLE} className="menu__img" alt="logo" />
 				<h2 className="menu__title">OUR MENU</h2>
 			</div>
 			<div className="menu__container-cards">

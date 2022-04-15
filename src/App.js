@@ -1,4 +1,5 @@
 import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
 import CustomersReviews from './components/CustomersReviews';
 import Main from './components/Main';
 import Menu from './components/Menu';
@@ -13,6 +14,7 @@ function App() {
 				<Menu />
 				<AboutUs />
 				<CustomersReviews />
+				<ContactUs />
 			</div>
 		</>
 	);

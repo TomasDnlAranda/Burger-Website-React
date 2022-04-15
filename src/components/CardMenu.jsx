@@ -32,7 +32,7 @@ const CardMenu = ({ item }) => {
 	return (
 		<div className="card-menu">
 			<div className="card-menu__container-card">
-				<img src={img} className="card-menu__img" />
+				<img src={img} className="card-menu__img" alt="burger" />
 				<div className="card-menu__container-stars">{STARS[stars].map((item) => item)}</div>
 				<h3 className="card-menu__name">{name}</h3>
 				<span className="card-menu__price">$ {price}</span>

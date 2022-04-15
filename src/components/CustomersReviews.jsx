@@ -37,7 +37,7 @@ const CustomersReviews = () => {
 	return (
 		<div className="customers-reviews">
 			<div className="customers-reviews__container-text">
-				<img src={TITLE} className="customers-reviews__img" />
+				<img src={TITLE} className="customers-reviews__img" alt="logo" />
 				<h2 className="customers-reviews__title">CUSTOMERS REVIEWS</h2>
 			</div>
 			<div className="customers-reviews__container-customers">

@@ -8,12 +8,12 @@ const AboutUs = () => {
 	return (
 		<section className="about-us">
 			<div className="about-us__container-text">
-				<img className="about-us__logo" src={TITLE} />
-				<h2 className="about-us__title">OUR MENU</h2>
+				<img className="about-us__logo" src={TITLE} alt="logo" />
+				<h2 className="about-us__title">ABOUT US</h2>
 			</div>
 			<div className="about-us__container">
 				<div className="about-us__col-left">
-					<img className="about-us__img" src={BURGER_ABOUT_US} />
+					<img className="about-us__img" src={BURGER_ABOUT_US} alt="burger-about-us" />
 				</div>
 				<div className="about-us__col-right">
 					<h3 className="about-us__col-title">STEP INTO BURGER HEAVEN</h3>

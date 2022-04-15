@@ -31,7 +31,7 @@ const Customers = ({ item }) => {
 
 	return (
 		<div className="customers">
-			<img className="customers__img" src={img} />
+			<img className="customers__img" src={img} alt="customers" />
 			<h3 className="customers__name">{name}</h3>
 			<p className="customers__description">{description}</p>
 			<div className="customers__containers-stars">{STARS[stars].map((item) => item)}</div>
