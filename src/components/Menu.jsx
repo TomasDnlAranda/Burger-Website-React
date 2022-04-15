@@ -56,7 +56,7 @@ const Menu = () => {
 	];
 
 	return (
-		<div className="menu">
+		<section className="menu">
 			<div className="menu__container-text">
 				<img src={TITLE} className="menu__img" />
 				<h2 className="menu__title">OUR MENU</h2>
@@ -66,7 +66,7 @@ const Menu = () => {
 					<CardMenu item={item} key={item.id} />
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };
 

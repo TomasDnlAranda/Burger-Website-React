@@ -1,3 +1,4 @@
+import AboutUs from './components/AboutUs';
 import Main from './components/Main';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
@@ -9,6 +10,7 @@ function App() {
 				<Navbar />
 				<Main />
 				<Menu />
+				<AboutUs />
 			</div>
 		</>
 	);
