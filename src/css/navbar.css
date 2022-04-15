@@ -6,6 +6,7 @@
 	user-select: none;
 	position: relative;
 	z-index: 100;
+	border-bottom: 1px solid var(--navbar-bg-color);
 }
 
 .navbar__container-border {

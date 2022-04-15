@@ -30,6 +30,26 @@
 	margin: 0.75rem auto 0;
 	color: var(--main-text-subtitule-color);
 	font-size: 0.8rem;
-	width: 85%;
+	width: 175px;
 	text-align: center;
+}
+
+@media all and (min-width: 870px) {
+	.card-main__description {
+		margin: 0.75rem auto 0;
+		color: var(--main-text-subtitule-color);
+		font-size: 0.8rem;
+		width: 200px;
+		text-align: center;
+	}
+}
+
+@media all and (min-width: 870px) {
+	.card-main__description {
+		margin: 0.75rem auto 0;
+		color: var(--main-text-subtitule-color);
+		font-size: 0.8rem;
+		width: 250px;
+		text-align: center;
+	}
 }
