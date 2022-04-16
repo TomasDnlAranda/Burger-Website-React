@@ -3,6 +3,7 @@ import '../css/cardmain.css';
 
 const CardMain = ({ item }) => {
 	const { icon, name, description } = item;
+
 	return (
 		<div className="card-main">
 			<div className="card-main__container-icon">

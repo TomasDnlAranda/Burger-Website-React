@@ -1,4 +1,6 @@
 import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import CustomersReviews from './components/CustomersReviews';
 import Main from './components/Main';
 import Menu from './components/Menu';
 import Navbar from './components/Navbar';
@@ -11,6 +13,8 @@ function App() {
 				<Main />
 				<Menu />
 				<AboutUs />
+				<CustomersReviews />
+				<ContactUs />
 			</div>
 		</>
 	);

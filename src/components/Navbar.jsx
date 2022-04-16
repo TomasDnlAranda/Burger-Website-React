@@ -33,7 +33,7 @@ const Navbar = () => {
 			<header className={clickSearch ? 'navbar__container-border' : 'navbar__container'}>
 				<nav className="navbar__row">
 					<div className="navbar__responsive-logo">
-						<img src={logo} className="navbar__responsive-menu-logo" />
+						<img src={logo} className="navbar__responsive-menu-logo" alt="logo-navbar" />
 					</div>
 					<div className="navbar__responsive-icon-menu">
 						{clickMenu ? (
@@ -53,7 +53,7 @@ const Navbar = () => {
 						<span className="navbar__menu-home">Home</span>
 						<span className="navbar__menu-menu">Menu</span>
 						<span className="navbar__menu-about">About</span>
-						<img src={logo} className="navbar__menu-logo" />
+						<img src={logo} className="navbar__menu-logo" alt="logo-navbar" />
 						<span className="navbar__menu-reviews">Reviews</span>
 						<span className="navbar__menu-contact">Contact</span>
 						<span className="navbar__menu-blogs">Blogs</span>

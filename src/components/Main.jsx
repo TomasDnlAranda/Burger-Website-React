@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/main.css';
-import burgerMain from '../image/burger-baner.png';
+import BURGER_MAIN from '../image/burger-baner.png';
 import CardMain from './CardMain';
 import { FaHamburger, FaHeadset, FaTruck } from 'react-icons/fa';
 
@@ -32,7 +32,7 @@ const Main = () => {
 	return (
 		<main className="main">
 			<div className="main__container-img">
-				<img className="main__img" src={burgerMain} />
+				<img className="main__img" src={BURGER_MAIN} alt="burger-main" />
 			</div>
 			<div className="main__container-text">
 				<h1 className="main__title">SO MEATY YOU'LL GO CRAZY</h1>

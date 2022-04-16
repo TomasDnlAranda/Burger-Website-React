@@ -1,9 +1,9 @@
 import React from 'react';
-import '../css/cardmenu.css';
+import '../css/customers.css';
 import { AiFillStar as IconStar } from 'react-icons/ai';
 
-const CardMenu = ({ item }) => {
-	const { name, price, img, stars } = item;
+const Customers = ({ item }) => {
+	const { name, description, stars, img } = item;
 
 	const STARS = [
 		[],
@@ -30,16 +30,13 @@ const CardMenu = ({ item }) => {
 	];
 
 	return (
-		<div className="card-menu">
-			<div className="card-menu__container-card">
-				<img src={img} className="card-menu__img" alt="burger" />
-				<div className="card-menu__container-stars">{STARS[stars].map((item) => item)}</div>
-				<h3 className="card-menu__name">{name}</h3>
-				<span className="card-menu__price">$ {price}</span>
-				<button className="card-menu__btn">Add To Cart</button>
-			</div>
+		<div className="customers">
+			<img className="customers__img" src={img} alt="customers" />
+			<h3 className="customers__name">{name}</h3>
+			<p className="customers__description">{description}</p>
+			<div className="customers__containers-stars">{STARS[stars].map((item) => item)}</div>
 		</div>
 	);
 };
 
-export default CardMenu;
+export default Customers;
