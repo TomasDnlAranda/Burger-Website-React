@@ -15,6 +15,7 @@ const CustomersReviews = () => {
 			img: CUSTOMER_1,
 			stars: 4,
 			id: 1,
+			scroll: 150,
 		},
 		{
 			name: 'JHON DEO',
@@ -23,6 +24,7 @@ const CustomersReviews = () => {
 			img: CUSTOMER_2,
 			stars: 5,
 			id: 2,
+			scroll: 300,
 		},
 		{
 			name: 'JHON DEO',
@@ -31,6 +33,7 @@ const CustomersReviews = () => {
 			img: CUSTOMER_3,
 			stars: 4,
 			id: 3,
+			scroll: 450,
 		},
 	];
 

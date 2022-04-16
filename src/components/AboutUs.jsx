@@ -13,9 +13,15 @@ const AboutUs = () => {
 			</div>
 			<div className="about-us__container">
 				<div className="about-us__col-left">
-					<img className="about-us__img" src={BURGER_ABOUT_US} alt="burger-about-us" />
+					<img
+						className="about-us__img"
+						src={BURGER_ABOUT_US}
+						alt="burger-about-us"
+						data-aos="flip-left"
+						data-aos-delay="150"
+					/>
 				</div>
-				<div className="about-us__col-right">
+				<div className="about-us__col-right" data-aos="flip-left" data-aos-delay="150">
 					<h3 className="about-us__col-title">STEP INTO BURGER HEAVEN</h3>
 					<p className="about-us__col-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

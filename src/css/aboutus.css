@@ -1,5 +1,6 @@
 .about-us {
 	margin-top: 4rem;
+	user-select: none;
 }
 
 .about-us__container-text {
