@@ -3,7 +3,7 @@ import '../css/customers.css';
 import { AiFillStar as IconStar } from 'react-icons/ai';
 
 const Customers = ({ item }) => {
-	const { name, description, stars, img } = item;
+	const { name, description, stars, img, scroll } = item;
 
 	const STARS = [
 		[],
@@ -30,7 +30,7 @@ const Customers = ({ item }) => {
 	];
 
 	return (
-		<div className="customers">
+		<div className="customers" data-aos="fade-up" data-aos-delay={scroll}>
 			<img className="customers__img" src={img} alt="customers" />
 			<h3 className="customers__name">{name}</h3>
 			<p className="customers__description">{description}</p>

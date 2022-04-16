@@ -3,7 +3,7 @@ import '../css/cardmenu.css';
 import { AiFillStar as IconStar } from 'react-icons/ai';
 
 const CardMenu = ({ item }) => {
-	const { name, price, img, stars } = item;
+	const { name, price, img, stars, scroll } = item;
 
 	const STARS = [
 		[],
@@ -30,7 +30,7 @@ const CardMenu = ({ item }) => {
 	];
 
 	return (
-		<div className="card-menu">
+		<div className="card-menu" data-aos="fade-up" data-aos-delay={scroll}>
 			<div className="card-menu__container-card">
 				<img src={img} className="card-menu__img" alt="burger" />
 				<div className="card-menu__container-stars">{STARS[stars].map((item) => item)}</div>

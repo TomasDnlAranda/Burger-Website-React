@@ -20,3 +20,16 @@ code {
 	--main-text-subtitule-color: rgb(182, 182, 182);
 	--color-yellow: #f5cd06;
 }
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+	background-image: url(.//image/background.jpg);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--navbar-text-color-hover);
+	border-radius: 3.5px;
+}

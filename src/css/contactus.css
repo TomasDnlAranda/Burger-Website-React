@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 3rem;
+	user-select: none;
 }
 
 .contact-us__responsive {
@@ -40,6 +41,7 @@
 .contact-us__imframe {
 	width: 100%;
 	height: auto;
+	border: 2.5px solid var(--navbar-text-color-hover);
 }
 
 .contact-us__container-cards {

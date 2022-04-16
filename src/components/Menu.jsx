@@ -17,6 +17,7 @@ const Menu = () => {
 			img: BURGER_1,
 			stars: 5,
 			id: 1,
+			scroll: 150,
 		},
 		{
 			name: 'BACON EGG HAMBURGER',
@@ -24,6 +25,7 @@ const Menu = () => {
 			img: BURGER_2,
 			stars: 3,
 			id: 2,
+			scroll: 300,
 		},
 		{
 			name: 'VEGETARIAN HAMBURGER',
@@ -31,6 +33,7 @@ const Menu = () => {
 			img: BURGER_3,
 			stars: 4,
 			id: 3,
+			scroll: 450,
 		},
 		{
 			name: 'BIG HAMBURGER DOUBLE',
@@ -38,6 +41,7 @@ const Menu = () => {
 			img: BURGER_4,
 			stars: 5,
 			id: 4,
+			scroll: 600,
 		},
 		{
 			name: 'HAMBURGER CHEESE FISH',
@@ -45,6 +49,7 @@ const Menu = () => {
 			img: BURGER_5,
 			stars: 5,
 			id: 5,
+			scroll: 750,
 		},
 		{
 			name: 'CUCUMBER HAMBURGER',
@@ -52,6 +57,7 @@ const Menu = () => {
 			img: BURGER_6,
 			stars: 3,
 			id: 6,
+			scroll: 900,
 		},
 	];
 
