@@ -49,7 +49,7 @@ const ContactUs = () => {
 							allowFullScreen=""
 							loading="lazy"
 							referrerPolicy="no-referrer-when-downgrade"
-							title="imframe"
+							title="location"
 						></iframe>
 					</div>
 				</div>
