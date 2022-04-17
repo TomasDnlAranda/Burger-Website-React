@@ -119,11 +119,13 @@
 
 	.card-daily-post__name {
 		font-size: 1rem;
+		margin: 0.75rem 0;
 	}
 
 	.card-daily-post__description {
 		font-size: 0.65rem;
 		width: 250px;
+		margin: 0 0 0.75rem 0;
 	}
 
 	.card-daily-post__btn {
@@ -143,11 +145,13 @@
 
 	.card-daily-post__name {
 		font-size: 1.15rem;
+		margin: 0.95rem 0;
 	}
 
 	.card-daily-post__description {
 		font-size: 0.6rem;
 		width: 275px;
+		margin: 0 0 0.75rem 0;
 	}
 
 	.card-daily-post__btn {

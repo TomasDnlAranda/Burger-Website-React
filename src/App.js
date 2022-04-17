@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import DailyPosts from './components/DailyPosts';
+import Footer from './components/Footer';
 AOS.init({
 	duration: 800,
 });
@@ -22,6 +23,7 @@ function App() {
 				<CustomersReviews />
 				<ContactUs />
 				<DailyPosts />
+				<Footer />
 			</div>
 		</>
 	);
