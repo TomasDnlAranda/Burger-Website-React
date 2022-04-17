@@ -14,10 +14,10 @@ code {
 }
 
 :root {
-	--navbar-bg-color: #0c0c0c;
-	--navbar-text-color: #fff;
-	--navbar-text-color-hover: #e3cb57;
-	--main-text-subtitule-color: rgb(182, 182, 182);
+	--color-dark-: #0c0c0c;
+	--color-white: #fff;
+	--color-burger: #e3cb57;
+	--color-secondary: rgb(182, 182, 182);
 	--color-yellow: #f5cd06;
 }
 
@@ -30,6 +30,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--navbar-text-color-hover);
+	background-color: var(--color-burger);
 	border-radius: 3.5px;
 }

@@ -1,8 +1,8 @@
 .menu-responsive__esconde {
 	display: flex;
 	flex-direction: column;
-	background: var(--navbar-bg-color);
-	color: #fff;
+	background: var(--color-dark-);
+	color: var(--color-white);
 	position: absolute;
 	top: -118px;
 	left: 0;
@@ -14,8 +14,8 @@
 .menu-responsive__appear {
 	display: flex;
 	flex-direction: column;
-	background: var(--navbar-bg-color);
-	color: #fff;
+	background: var(--color-dark-);
+	color: var(--color-white);
 	position: absolute;
 	top: 54.9px;
 	padding: 0.5rem 0;
@@ -33,7 +33,7 @@
 
 .menu-responsive__esconde span:hover,
 .menu-responsive__appear span:hover {
-	color: var(--navbar-text-color-hover);
+	color: var(--color-burger);
 }
 
 @media all and (min-width: 950px) {
