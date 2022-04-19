@@ -35,7 +35,7 @@ const ContactUs = () => {
 	];
 
 	return (
-		<div className="contact-us">
+		<div className="contact-us" id="contact">
 			<div className="contact-us__container-text">
 				<img alt="logo" className="contact-us__img" src={TITLE} />
 				<h2 className="contact-us__title">CONTACT US</h2>

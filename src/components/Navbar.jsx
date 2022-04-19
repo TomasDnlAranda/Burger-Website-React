@@ -50,13 +50,39 @@ const Navbar = () => {
 						)}
 					</div>
 					<div className="navbar__menu">
-						<span className="navbar__menu-home">Home</span>
-						<span className="navbar__menu-menu">Menu</span>
-						<span className="navbar__menu-about">About</span>
-						<img src={logo} className="navbar__menu-logo" alt="logo-navbar" />
-						<span className="navbar__menu-reviews">Reviews</span>
-						<span className="navbar__menu-contact">Contact</span>
-						<span className="navbar__menu-blogs">Blogs</span>
+						<span className="navbar__menu-home">
+							<a href="#home" className="navbar__link">
+								Home
+							</a>
+						</span>
+						<span className="navbar__menu-menu">
+							<a href="#menu" className="navbar__link">
+								Menu
+							</a>
+						</span>
+						<span className="navbar__menu-about">
+							<a href="#about" className="navbar__link">
+								About
+							</a>
+						</span>
+						<a href="#home" className="navbar__link">
+							<img src={logo} className="navbar__menu-logo" alt="logo-navbar" />
+						</a>
+						<span className="navbar__menu-reviews">
+							<a href="#review" className="navbar__link">
+								Reviews
+							</a>
+						</span>
+						<span className="navbar__menu-contact">
+							<a href="#contact" className="navbar__link">
+								Contact
+							</a>
+						</span>
+						<span className="navbar__menu-blogs">
+							<a href="#blog" className="navbar__link">
+								Blogs
+							</a>
+						</span>
 					</div>
 					<div className="navbar__container-icon-cart">
 						<IconCartShopping className="navbar__icon-cart" />

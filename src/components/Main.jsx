@@ -33,7 +33,7 @@ const Main = () => {
 	];
 
 	return (
-		<main className="main">
+		<main className="main" id="home">
 			<div className="main__container-img">
 				<img
 					className="main__img"
@@ -52,9 +52,9 @@ const Main = () => {
 					ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 					sed do eiusmod tempor incididu
 				</p>
-				<button className="main__btn" data-aos="fade-up" data-aos-delay="600">
+				<a href="#aa" className="main__btn" data-aos="fade-up" data-aos-delay="600">
 					Our Menu
-				</button>
+				</a>
 			</div>
 			<div className="main__container-card"></div>
 			<div className="main__container-cards">

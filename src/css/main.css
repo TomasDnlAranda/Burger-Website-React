@@ -2,7 +2,7 @@ main {
 	background-image: url(../image/home-bg.png);
 	background-size: cover;
 	background-position: center;
-	margin-top: 4rem;
+	padding-top: 4rem;
 	z-index: -100;
 	position: relative;
 	user-select: none;
@@ -38,21 +38,21 @@ main {
 	line-height: 1.8;
 	text-align: center;
 }
+.main__btn:hover {
+	color: var(--color-dark-);
+	background-color: var(--color-white);
+}
 
 .main__btn {
 	color: var(--color-white);
-	background: transparent;
+	background: inherit;
 	border: 1px solid var(--color-white);
 	width: max-content;
 	padding: 7.5px 25px;
 	margin: 0.5rem auto 0;
 	cursor: pointer;
 	transition: all 0.5s;
-}
-
-.main__btn:hover {
-	color: var(--color-dark-);
-	background-color: var(--color-white);
+	text-decoration: none;
 }
 
 .main__container-cards {
@@ -96,14 +96,8 @@ main {
 	}
 
 	.main__btn {
-		color: var(--color-white);
-		background: transparent;
-		border: 1px solid var(--color-white);
-		width: max-content;
 		padding: 10px 50px;
 		margin: 0.5rem auto 0;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	.main__container-cards {
@@ -145,14 +139,8 @@ main {
 	}
 
 	.main__btn {
-		color: var(--color-white);
-		background: transparent;
-		border: 1px solid var(--color-white);
-		width: max-content;
 		padding: 10px 75px;
 		margin: 0.5rem auto 0;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	.main__container-cards {
@@ -194,14 +182,8 @@ main {
 	}
 
 	.main__btn {
-		color: var(--color-white);
-		background: transparent;
-		border: 1px solid var(--color-white);
-		width: max-content;
 		padding: 10px 75px;
 		margin: 0.5rem auto 0;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	.main__container-cards {

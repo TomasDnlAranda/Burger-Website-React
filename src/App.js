@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import CustomersReviews from './components/CustomersReviews';
@@ -8,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import DailyPosts from './components/DailyPosts';
 import Footer from './components/Footer';
+
 AOS.init({
 	duration: 800,
 });
