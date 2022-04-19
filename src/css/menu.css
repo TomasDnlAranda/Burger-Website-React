@@ -1,6 +1,6 @@
 .menu {
 	display: flex;
-	margin-top: 5rem;
+	padding-top: 5rem;
 	flex-direction: column;
 	user-select: none;
 }
@@ -14,7 +14,7 @@
 }
 
 .menu__title {
-	color: var(--navbar-text-color);
+	color: var(--color-white);
 	font-size: 1.5rem;
 }
 
@@ -41,7 +41,7 @@
 	}
 
 	.menu__title {
-		color: var(--navbar-text-color);
+		color: var(--color-white);
 		font-size: 1.5rem;
 	}
 

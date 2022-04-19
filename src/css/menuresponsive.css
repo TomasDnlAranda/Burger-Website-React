@@ -1,28 +1,29 @@
 .menu-responsive__esconde {
 	display: flex;
 	flex-direction: column;
-	background: var(--navbar-bg-color);
-	color: #fff;
-	position: absolute;
+	background: var(--color-dark-);
+	color: var(--color-white);
+	position: fixed;
+	width: 100%;
 	top: -118px;
 	left: 0;
 	transition: all 0.3s;
 	z-index: -50;
-	width: 100%;
 }
 
 .menu-responsive__appear {
 	display: flex;
 	flex-direction: column;
-	background: var(--navbar-bg-color);
-	color: #fff;
-	position: absolute;
+	background: var(--color-dark-);
+	color: var(--color-white);
 	top: 54.9px;
 	padding: 0.5rem 0;
 	left: 0;
 	transition: all 0.3s;
 	z-index: -50;
+	position: fixed;
 	width: 100%;
+	z-index: 40;
 }
 
 .menu-responsive__appear span,
@@ -33,7 +34,7 @@
 
 .menu-responsive__esconde span:hover,
 .menu-responsive__appear span:hover {
-	color: var(--navbar-text-color-hover);
+	color: var(--color-burger);
 }
 
 @media all and (min-width: 950px) {

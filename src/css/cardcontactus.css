@@ -9,7 +9,7 @@
 
 .card-contact-us___container-icon {
 	border-radius: 100%;
-	background-color: var(--navbar-text-color-hover);
+	background-color: var(--color-burger);
 	width: 50px;
 	height: 50px;
 	display: flex;
@@ -21,13 +21,13 @@
 .card-contact-us___name {
 	margin: 0.75rem 0;
 	font-size: 1rem;
-	color: #fff;
+	color: var(--color-white);
 }
 
 .card-contact-us___contact-one {
 	margin: 0 0 0.25rem 0;
 	font-size: 0.75rem;
-	color: var(--main-text-subtitule-color);
+	color: var(--color-secondary);
 }
 
 .card-contact-us___contact-two {
@@ -48,7 +48,7 @@
 
 	.card-contact-us___container-icon {
 		border-radius: 100%;
-		background-color: var(--navbar-text-color-hover);
+		background-color: var(--color-burger);
 		width: 60px;
 		height: 60px;
 		display: flex;
@@ -60,18 +60,18 @@
 	.card-contact-us___name {
 		margin: 0.75rem 0;
 		font-size: 0.8rem;
-		color: #fff;
+		color: var(--color-white);
 	}
 
 	.card-contact-us___contact-one {
 		margin: 0 0 0.25rem 0;
 		font-size: 0.6rem;
-		color: var(--main-text-subtitule-color);
+		color: var(--color-secondary);
 	}
 
 	.card-contact-us___contact-two {
 		margin: 0;
 		font-size: 0.6rem;
-		color: var(--main-text-subtitule-color);
+		color: var(--color-secondary);
 	}
 }

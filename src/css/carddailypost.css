@@ -6,7 +6,7 @@
 .card-daily-post__container-img {
 	overflow: hidden;
 	height: 176px;
-	border: 1px solid var(--navbar-text-color-hover);
+	border: 1px solid var(--color-burger);
 }
 
 .card-daily-post {
@@ -22,7 +22,7 @@
 }
 
 .card-daily-post__name {
-	color: #fff;
+	color: var(--color-white);
 	font-size: 1rem;
 	margin: 0.5rem 0;
 }
@@ -33,13 +33,13 @@
 	font-size: 0.6rem;
 	line-height: 1.85;
 	width: 225px;
-	color: var(--main-text-subtitule-color);
+	color: var(--color-secondary);
 }
 
 .card-daily-post__btn {
-	border: 1.5px solid var(--main-text-subtitule-color);
+	border: 1.5px solid var(--color-secondary);
 	background: none;
-	color: #fff;
+	color: var(--color-white);
 	padding: 0.5rem 2rem;
 	font-size: 0.65rem;
 	transition: all 0.3s;
@@ -47,9 +47,9 @@
 }
 
 .card-daily-post__btn:hover {
-	background: rgb(255, 255, 255);
+	background: var(--color-white);
 	color: #000;
-	border: 1.5px solid rgb(255, 255, 255);
+	border: 1.5px solid var(--color-white);
 }
 
 .card-daily-post__hover-container {
@@ -57,12 +57,12 @@
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
-	color: #fff;
+	color: var(--color-white);
 	padding: 0.5rem;
 	background: #000;
 	transition: all 0.5s;
 	bottom: -34px;
-	border-top: 1px solid var(--navbar-text-color-hover);
+	border-top: 1px solid var(--color-burger);
 }
 
 .card-daily-post:hover .card-daily-post__hover-container {
@@ -82,7 +82,7 @@
 }
 
 .card-daily-post__icon-hover {
-	color: var(--navbar-text-color-hover);
+	color: var(--color-burger);
 }
 
 @media all and (min-width: 550px) {

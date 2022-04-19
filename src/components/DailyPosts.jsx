@@ -35,7 +35,7 @@ const DailyPosts = () => {
 	];
 
 	return (
-		<div className="daily-post">
+		<div className="daily-post" id="blog">
 			<div className="daily-post__container-text">
 				<img className="daily-post__img" src={TITLE} alt="img-section" />
 				<h2 className="daily-post__title">DAILY POSTS</h2>

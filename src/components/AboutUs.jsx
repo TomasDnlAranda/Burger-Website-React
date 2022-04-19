@@ -6,7 +6,7 @@ import '../css/aboutus.css';
 
 const AboutUs = () => {
 	return (
-		<section className="about-us">
+		<section className="about-us" id='about'>
 			<div className="about-us__container-text">
 				<img className="about-us__logo" src={TITLE} alt="logo" />
 				<h2 className="about-us__title">ABOUT US</h2>

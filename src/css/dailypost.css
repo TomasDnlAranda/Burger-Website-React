@@ -3,8 +3,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 3rem;
+	padding-top: 4.5rem;
 	margin-bottom: 3rem;
+	user-select: none;
 }
 
 .daily-post__container-text {
@@ -12,7 +13,7 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	color: #fff;
+	color: var(--color-white);
 }
 
 .daily-post__container-cards {

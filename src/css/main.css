@@ -2,7 +2,7 @@ main {
 	background-image: url(../image/home-bg.png);
 	background-size: cover;
 	background-position: center;
-	margin-top: 4rem;
+	padding-top: 4rem;
 	z-index: -100;
 	position: relative;
 	user-select: none;
@@ -24,35 +24,35 @@ main {
 }
 
 .main__title {
-	color: var(--navbar-text-color);
+	color: var(--color-white);
 	margin: 1rem 0 0;
 	font-size: 1.25rem;
 	text-align: center;
 }
 
 .main__subtitle {
-	color: var(--main-text-subtitule-color);
+	color: var(--color-secondary);
 	margin: 1rem auto;
 	font-size: 0.75rem;
 	width: 275px;
 	line-height: 1.8;
 	text-align: center;
 }
+.main__btn:hover {
+	color: var(--color-dark-);
+	background-color: var(--color-white);
+}
 
 .main__btn {
-	color: var(--navbar-text-color);
-	background: transparent;
-	border: 1px solid var(--navbar-text-color);
+	color: var(--color-white);
+	background: inherit;
+	border: 1px solid var(--color-white);
 	width: max-content;
 	padding: 7.5px 25px;
 	margin: 0.5rem auto 0;
 	cursor: pointer;
 	transition: all 0.5s;
-}
-
-.main__btn:hover {
-	color: var(--navbar-bg-color);
-	background-color: var(--navbar-text-color);
+	text-decoration: none;
 }
 
 .main__container-cards {
@@ -80,14 +80,14 @@ main {
 	}
 
 	.main__title {
-		color: var(--navbar-text-color);
+		color: var(--color-white);
 		margin: 0.75rem 0 0;
 		font-size: 1.75rem;
 		text-align: center;
 	}
 
 	.main__subtitle {
-		color: var(--main-text-subtitule-color);
+		color: var(--color-secondary);
 		margin: 0.75rem auto;
 		font-size: 0.75rem;
 		width: 500px;
@@ -96,14 +96,8 @@ main {
 	}
 
 	.main__btn {
-		color: var(--navbar-text-color);
-		background: transparent;
-		border: 1px solid var(--navbar-text-color);
-		width: max-content;
 		padding: 10px 50px;
 		margin: 0.5rem auto 0;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	.main__container-cards {
@@ -129,14 +123,14 @@ main {
 	}
 
 	.main__title {
-		color: var(--navbar-text-color);
+		color: var(--color-white);
 		margin: 0.75rem 0 0;
 		font-size: 2.5rem;
 		text-align: center;
 	}
 
 	.main__subtitle {
-		color: var(--main-text-subtitule-color);
+		color: var(--color-secondary);
 		margin: 0.75rem auto;
 		font-size: 0.85rem;
 		width: 650px;
@@ -145,14 +139,8 @@ main {
 	}
 
 	.main__btn {
-		color: var(--navbar-text-color);
-		background: transparent;
-		border: 1px solid var(--navbar-text-color);
-		width: max-content;
 		padding: 10px 75px;
 		margin: 0.5rem auto 0;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	.main__container-cards {
@@ -178,14 +166,14 @@ main {
 	}
 
 	.main__title {
-		color: var(--navbar-text-color);
+		color: var(--color-white);
 		margin: 0.75rem 0 0;
 		font-size: 2.5rem;
 		text-align: center;
 	}
 
 	.main__subtitle {
-		color: var(--main-text-subtitule-color);
+		color: var(--color-secondary);
 		margin: 0.75rem auto;
 		font-size: 0.85rem;
 		width: 750px;
@@ -194,14 +182,8 @@ main {
 	}
 
 	.main__btn {
-		color: var(--navbar-text-color);
-		background: transparent;
-		border: 1px solid var(--navbar-text-color);
-		width: max-content;
 		padding: 10px 75px;
 		margin: 0.5rem auto 0;
-		cursor: pointer;
-		transition: all 0.5s;
 	}
 
 	.main__container-cards {

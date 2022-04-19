@@ -6,14 +6,26 @@ const Footer = () => {
 		<>
 			<div className="footer">
 				<div className="footer__col-one">
-					<button className="footer__home">Home</button>
-					<button className="footer__about">About</button>
-					<button className="footer__contact">Contact</button>
+					<a href="#home" className="footer__home">
+						Home
+					</a>
+					<a href="#about" className="footer__about">
+						About
+					</a>
+					<a href="#contact" className="footer__contact">
+						Contact
+					</a>
 				</div>
 				<div className="footer__col-two">
-					<button className="footer__menu">Menu</button>
-					<button className="footer__reviews">Reviews</button>
-					<button className="footer__blogs">Blogs</button>
+					<a href="#menu" className="footer__menu">
+						Menu
+					</a>
+					<a href="#review" className="footer__reviews">
+						Reviews
+					</a>
+					<a href="#blog" className="footer__blogs">
+						Blogs
+					</a>
 				</div>
 			</div>
 			<div className="footer__creator">

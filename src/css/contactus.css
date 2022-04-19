@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 3rem;
+	padding-top: 3.5rem;
 	user-select: none;
 }
 
@@ -41,7 +41,7 @@
 .contact-us__imframe {
 	width: 100%;
 	height: auto;
-	border: 2.5px solid var(--navbar-text-color-hover);
+	border: 2.5px solid var(--color-burger);
 }
 
 .contact-us__container-cards {
@@ -71,25 +71,25 @@
 .contact-us__form input {
 	width: 85%;
 	margin: 0.5rem 0;
-	border: 1.5px solid var(--main-text-subtitule-color);
+	border: 1.5px solid var(--color-secondary);
 	background: transparent;
 	border-radius: 3px;
-	color: var(--navbar-text-color-hover);
+	color: var(--color-burger);
 	padding: 0.7rem 0.45rem;
 	font-size: 0.75rem;
 }
 
 .contact-us__form input:focus::placeholder {
-	color: var(--navbar-text-color-hover);
+	color: var(--color-burger);
 }
 
 .contact-us__form input:focus {
-	border: 1.5px solid var(--navbar-text-color-hover);
+	border: 1.5px solid var(--color-burger);
 	outline: none;
 }
 
 .contact-us__btn-send-message {
-	border: 1.5px solid var(--main-text-subtitule-color);
+	border: 1.5px solid var(--color-secondary);
 	background: none;
 	color: #fff;
 	margin: 1rem 0;
@@ -100,9 +100,9 @@
 }
 
 .contact-us__btn-send-message:hover {
-	background: rgb(255, 255, 255);
+	background: var(--color-white);
 	color: #000;
-	border: 1.5px solid rgb(255, 255, 255);
+	border: 1.5px solid var(--color-white);
 }
 
 @media all and (min-width: 550px) {
@@ -144,10 +144,10 @@
 	.contact-us__form input {
 		width: 85%;
 		margin: 0.5rem 0;
-		border: 1.5px solid var(--main-text-subtitule-color);
+		border: 1.5px solid var(--color-secondary);
 		background: transparent;
 		border-radius: 3px;
-		color: var(--navbar-text-color-hover);
+		color: var(--color-burger);
 		padding: 0.7rem 0.45rem;
 		font-size: 0.75rem;
 	}
