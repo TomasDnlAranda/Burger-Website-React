@@ -28,6 +28,10 @@ const Navbar = () => {
 		}
 	};
 
+	const handleChangeStateMenu = () => {
+		setClickMenu(false);
+	};
+
 	return (
 		<>
 			<header className={clickSearch ? 'navbar__container-border' : 'navbar__container'}>
@@ -90,7 +94,11 @@ const Navbar = () => {
 				</nav>
 			</header>
 			<SearchNavbar clickSearch={clickSearch} clickMenu={clickMenu} />
-			<MenuResponsive clickMenu={clickMenu} clickSearch={clickSearch} />
+			<MenuResponsive
+				clickMenu={clickMenu}
+				clickSearch={clickSearch}
+				handleChangeStateMenu={handleChangeStateMenu}
+			/>
 		</>
 	);
 };

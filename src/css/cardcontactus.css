@@ -33,7 +33,7 @@
 .card-contact-us___contact-two {
 	margin: 0;
 	font-size: 0.75rem;
-	color: var(--main-text-subtitule-color);
+	color: var(--color-secondary);
 }
 
 @media all and (min-width: 750px) {
