@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdEmail as IconEmail } from 'react-icons/md';
 import { BsFillPhoneFill as IconPhone } from 'react-icons/bs';
 import { ImLocation as IconLocation } from 'react-icons/im';
 import CardContactUs from './CardContactUs';
 import TITLE from '../image/title-img.png';
 import '../css/contactus.css';
+import { Formik } from 'formik';
 
 const ContactUs = () => {
 	const DATA_CONTACT = [
@@ -34,6 +35,8 @@ const ContactUs = () => {
 		},
 	];
 
+	const [msgFormSend, setMsgFormSend] = useState(false);
+
 	return (
 		<div className="contact-us" id="contact">
 			<div className="contact-us__container-text">
@@ -61,39 +64,117 @@ const ContactUs = () => {
 					</div>
 					<div className="contact-us__container-form">
 						<h3 className="contact-us__form-title">GET IN TOUCH</h3>
-						<form className="contact-us__form">
-							<input
-								className="contact-us__input-full-name"
-								data-aos="fade-up"
-								data-aos-delay="150"
-								placeholder="full name"
-							/>
-							<input
-								className="contact-us__input-email"
-								placeholder="email"
-								data-aos="fade-up"
-								data-aos-delay="300"
-							/>
-							<input
-								className="contact-us__input-number"
-								placeholder="number"
-								data-aos="fade-up"
-								data-aos-delay="450"
-							/>
-							<input
-								className="contact-us__input-message"
-								placeholder="message"
-								data-aos="fade-up"
-								data-aos-delay="600"
-							/>
-							<button
-								className="contact-us__btn-send-message"
-								data-aos="fade-up"
-								data-aos-delay="750"
-							>
-								Send Message
-							</button>
-						</form>
+						<Formik
+							initialValues={{
+								name: '',
+								email: '',
+								number: '',
+								message: '',
+							}}
+							onSubmit={(valores, { resetForm }) => {
+								resetForm();
+								setMsgFormSend(true);
+								setTimeout(() => {
+									setMsgFormSend(false);
+								}, 5000);
+							}}
+							validate={(valores) => {
+								let errores = {};
+
+								const EX_REG_EMAIL =
+									/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
+
+								const EX_REG_NUMBER = /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
+
+								const EX_REG_LETTER = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+
+								if (!valores.name.trim()) {
+									errores.name = 'the full name field cannot be empty';
+								} else if (!EX_REG_LETTER.test(valores.name)) {
+									errores.name = 'enter only letters';
+								}
+
+								if (!valores.email.trim()) {
+									errores.correo = 'the email field cannot be empty';
+								} else if (!EX_REG_EMAIL.test(valores.email)) {
+									errores.correo = 'enter a valid email';
+								}
+
+								if (!valores.number.trim()) {
+									errores.number = 'the number field cannot be empty';
+								} else if (!EX_REG_NUMBER.test(valores.number)) {
+									errores.number = 'enter a valid number';
+								}
+
+								if (!valores.message.trim()) {
+									errores.message = 'do not leave the message field empty';
+								}
+								return errores;
+							}}
+						>
+							{({ handleSubmit, handleChange, touched, errors, handleBlur, values }) => (
+								<form
+									className="contact-us__form"
+									onSubmit={handleSubmit}
+									data-aos="flip-right"
+									data-aos-delay="150"
+								>
+									<input
+										className="contact-us__input-full-name"
+										name="name"
+										placeholder="full name"
+										value={values.name}
+										autoComplete="off"
+										onChange={handleChange}
+										onBlur={handleBlur}
+									/>
+									{touched.name && errors.name && (
+										<div className="contact-us__msg-error">{errors.name}</div>
+									)}
+									<input
+										className="contact-us__input-email"
+										placeholder="email"
+										name="email"
+										value={values.email}
+										autoComplete="off"
+										onChange={handleChange}
+										onBlur={handleBlur}
+									/>
+									{touched.email && errors.correo && (
+										<div className="contact-us__msg-error">{errors.correo}</div>
+									)}
+									<input
+										className="contact-us__input-number"
+										placeholder="number"
+										name="number"
+										value={values.number}
+										onChange={handleChange}
+										autoComplete="off"
+										onBlur={handleBlur}
+									/>
+									{touched.number && errors.number && (
+										<div className="contact-us__msg-error">{errors.number}</div>
+									)}
+									<input
+										className="contact-us__input-message"
+										placeholder="message"
+										name="message"
+										value={values.message}
+										onChange={handleChange}
+										onBlur={handleBlur}
+									/>
+									{touched.message && errors.message && (
+										<div className="contact-us__msg-error">{errors.message}</div>
+									)}
+									<button type="submit" className="contact-us__btn-send-message">
+										Send Message
+									</button>
+									{msgFormSend ? (
+										<div className="contact-us__msg-success">form sent successfully</div>
+									) : null}
+								</form>
+							)}
+						</Formik>
 					</div>
 				</div>
 			</div>

@@ -105,6 +105,29 @@
 	border: 1.5px solid var(--color-white);
 }
 
+.contact-us__msg-error {
+	color: rgb(185, 0, 0);
+	font-size: 0.7rem;
+	font-weight: bold;
+	text-align: start;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contact-us__msg-success {
+	color: rgb(17, 207, 0);
+	font-size: 0.95rem;
+	letter-spacing: 1.4px;
+	font-weight: bold;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contact-us__input-message {
+	padding: 0.7rem 0.45rem 2rem !important;
+}
+
 @media all and (min-width: 550px) {
 	.contact-us__col-left {
 		display: flex;
@@ -114,10 +137,11 @@
 
 	.contact-us__container-imframe {
 		width: 100%;
+		margin-bottom: 1.5rem;
 	}
 	.contact-us__imframe {
 		width: 100%;
-		height: auto;
+		height: 400px;
 	}
 
 	.contact-us__container-cards {
@@ -126,6 +150,7 @@
 		justify-content: space-around;
 		align-items: center;
 		margin: 1.25rem 0 0;
+		margin-bottom: 1.5rem;
 	}
 
 	.contact-us__container-form {
@@ -134,11 +159,12 @@
 		flex-direction: column;
 		align-items: center;
 		color: #fff;
+		width: 100%;
 	}
 
 	.contact-us__form {
 		text-align: center;
-		width: 65%;
+		width: 30rem;
 	}
 
 	.contact-us__form input {
@@ -151,9 +177,15 @@
 		padding: 0.7rem 0.45rem;
 		font-size: 0.75rem;
 	}
+
+	.contact-us__msg-error {
+		font-size: 0.8rem;
+		width: 87.5%;
+		margin: 0 auto;
+	}
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 850px) {
 	.contact-us__responsive {
 		flex-direction: row;
 	}
@@ -175,7 +207,7 @@
 
 	.contact-us__imframe {
 		width: 300px;
-		height: 450px;
+		height: 550px !important;
 	}
 
 	.contact-us__container-cards {
@@ -191,14 +223,20 @@
 
 	.contact-us__form {
 		text-align: center;
-		width: 85%;
+		width: 25rem;
+	}
+	.contact-us__msg-error {
+		font-size: 0.7rem;
+	}
+	.contact-us__responsive {
+		width: 100%;
 	}
 }
 
 @media all and (min-width: 870px) {
 	.contact-us__imframe {
 		width: 350px;
-		height: 450px;
+		height: 650px;
 	}
 }
 
@@ -206,5 +244,13 @@
 	.contact-us__imframe {
 		width: 450px;
 		height: 450px;
+	}
+	.contact-us__form {
+		text-align: center;
+		width: 35rem;
+	}
+	.contact-us__msg-error {
+		font-size: 0.8rem;
+		width: 87.5%;
 	}
 }
