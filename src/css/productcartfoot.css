@@ -1,0 +1,31 @@
+.product-cart-foot {
+	display: flex;
+	flex-direction: row;
+	font-size: 0.75rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem 0 0;
+}
+
+.product-cart-foot__img {
+	width: 35px;
+	height: 35px;
+}
+
+.product-cart-foot__container-img {
+	width: 25%;
+}
+
+.product-cart-foot__name {
+	width: 50%;
+	margin: 0;
+}
+
+.product-cart-foot__name span {
+	color: var(--color-burger);
+	font-size: 1rem;
+}
+
+.product-cart-foot__price {
+	width: 25%;
+}

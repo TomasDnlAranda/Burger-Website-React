@@ -9,7 +9,7 @@ import BURGER_5 from '../image/product-5.png';
 import BURGER_6 from '../image/product-6.png';
 import CardMenu from './CardMenu';
 
-const Menu = () => {
+const Menu = ({ handleClickAddCart }) => {
 	const CARD_MENU = [
 		{
 			name: 'CHEESE DOUBLE HAMBURGER',
@@ -18,6 +18,7 @@ const Menu = () => {
 			stars: 5,
 			id: 1,
 			scroll: 150,
+			amount: 1,
 		},
 		{
 			name: 'BACON EGG HAMBURGER',
@@ -26,6 +27,7 @@ const Menu = () => {
 			stars: 3,
 			id: 2,
 			scroll: 300,
+			amount: 1,
 		},
 		{
 			name: 'VEGETARIAN HAMBURGER',
@@ -34,6 +36,7 @@ const Menu = () => {
 			stars: 4,
 			id: 3,
 			scroll: 450,
+			amount: 1,
 		},
 		{
 			name: 'BIG HAMBURGER DOUBLE',
@@ -42,6 +45,7 @@ const Menu = () => {
 			stars: 5,
 			id: 4,
 			scroll: 600,
+			amount: 1,
 		},
 		{
 			name: 'HAMBURGER CHEESE FISH',
@@ -50,6 +54,7 @@ const Menu = () => {
 			stars: 5,
 			id: 5,
 			scroll: 750,
+			amount: 1,
 		},
 		{
 			name: 'CUCUMBER HAMBURGER',
@@ -58,6 +63,7 @@ const Menu = () => {
 			stars: 3,
 			id: 6,
 			scroll: 900,
+			amount: 1,
 		},
 	];
 
@@ -69,7 +75,7 @@ const Menu = () => {
 			</div>
 			<div className="menu__container-cards">
 				{CARD_MENU.map((item) => (
-					<CardMenu item={item} key={item.id} />
+					<CardMenu item={item} key={item.id} handleClickAddCart={handleClickAddCart} />
 				))}
 			</div>
 		</section>

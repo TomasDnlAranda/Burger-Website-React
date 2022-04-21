@@ -2,8 +2,8 @@ import React from 'react';
 import '../css/cardmenu.css';
 import { AiFillStar as IconStar } from 'react-icons/ai';
 
-const CardMenu = ({ item }) => {
-	const { name, price, img, stars, scroll } = item;
+const CardMenu = ({ item, handleClickAddCart }) => {
+	const { name, price, img, stars, scroll, id } = item;
 
 	const STARS = [
 		[],
@@ -36,7 +36,9 @@ const CardMenu = ({ item }) => {
 				<div className="card-menu__container-stars">{STARS[stars].map((item) => item)}</div>
 				<h3 className="card-menu__name">{name}</h3>
 				<span className="card-menu__price">$ {price}</span>
-				<button className="card-menu__btn">Add To Cart</button>
+				<button className="card-menu__btn" onClick={() => handleClickAddCart(item, id)}>
+					Add To Cart
+				</button>
 			</div>
 		</div>
 	);
