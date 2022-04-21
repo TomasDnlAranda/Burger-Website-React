@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import CustomersReviews from './components/CustomersReviews';
@@ -15,12 +15,28 @@ AOS.init({
 });
 
 function App() {
+	const [badge, setBadge] = useState(0);
+	const [cartFood, setCartFood] = useState([]);
+
+	const handleClickAddCart = (item, id) => {
+		setBadge(badge + 1);
+		const find = cartFood.findIndex((item) => item.id === id);
+
+		if (find === -1) {
+			setCartFood((old) => [...old, item]);
+		} else {
+			const toUpdate = cartFood.map((item) =>
+				item.id === id ? { ...item, amount: item.amount + 1 } : item
+			);
+			setCartFood(toUpdate);
+		}
+	};
 	return (
 		<>
 			<div className="app__container">
-				<Navbar />
+				<Navbar badge={badge} cartFood={cartFood} />
 				<Main />
-				<Menu />
+				<Menu handleClickAddCart={handleClickAddCart} />
 				<AboutUs />
 				<CustomersReviews />
 				<ContactUs />

@@ -59,6 +59,31 @@
 	font-size: 1.3rem;
 }
 
+.navbar__container-badge {
+	display: inline-block;
+	position: relative;
+	top: auto;
+	left: auto;
+	height: 100%;
+}
+.navbar__badge {
+	background: var(--color-burger);
+	color: var(--color-dark-);
+	height: 17px;
+	width: 17px;
+	border-radius: 100%;
+	font-size: 0.7rem;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	font-weight: bolder;
+}
+
 .navbar__menu span:hover,
 .navbar__icon-cart:hover,
 .navbar__icon-search:hover,
@@ -193,7 +218,6 @@
 		justify-content: start;
 		align-items: center;
 		flex-grow: 1;
-		margin-left: 1rem;
 	}
 
 	.navbar__responsive-icon-menu {
@@ -217,6 +241,7 @@
 		align-items: center;
 		flex-grow: 0;
 		padding: 0 1rem;
+		margin-right: 1rem;
 	}
 
 	.navbar__responsive-menu-logo {

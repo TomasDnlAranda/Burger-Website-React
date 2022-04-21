@@ -7,16 +7,22 @@ import { FaSearch as IconSearch, FaShoppingCart as IconCartShopping } from 'reac
 import { HiMenu as IconMenu } from 'react-icons/hi';
 import { MdClear as IconClear } from 'react-icons/md';
 import MenuResponsive from './MenuResponsive';
+import CartFoot from './CartFoot';
 
-const Navbar = () => {
+const Navbar = ({ badge, cartFood }) => {
 	const [clickSearch, setClickSearch] = useState(false);
 	const [clickMenu, setClickMenu] = useState(false);
+	const [clickCartFood, setCartFood] = useState(false);
 
 	const showNavbarSearch = () => {
 		setClickSearch(!clickSearch);
 
 		if (clickMenu === true) {
 			setClickMenu(false);
+		}
+
+		if (clickCartFood === true) {
+			setCartFood(false);
 		}
 	};
 
@@ -25,6 +31,22 @@ const Navbar = () => {
 
 		if (clickSearch === true) {
 			setClickSearch(false);
+		}
+
+		if (clickCartFood === true) {
+			setCartFood(false);
+		}
+	};
+
+	const showCartFood = () => {
+		setCartFood(!clickCartFood);
+
+		if (clickSearch === true) {
+			setClickSearch(false);
+		}
+
+		if (clickMenu === true) {
+			setClickMenu(false);
 		}
 	};
 
@@ -89,7 +111,10 @@ const Navbar = () => {
 						</span>
 					</div>
 					<div className="navbar__container-icon-cart">
-						<IconCartShopping className="navbar__icon-cart" />
+						<IconCartShopping className="navbar__icon-cart" onClick={showCartFood} />
+						<div className="navbar__container-badge">
+							<span className="navbar__badge">{badge}</span>
+						</div>
 					</div>
 				</nav>
 			</header>
@@ -99,6 +124,7 @@ const Navbar = () => {
 				clickSearch={clickSearch}
 				handleChangeStateMenu={handleChangeStateMenu}
 			/>
+			<CartFoot clickCartFood={clickCartFood} cartFood={cartFood} />
 		</>
 	);
 };
