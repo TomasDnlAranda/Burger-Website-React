@@ -13,7 +13,7 @@ const Menu = ({ handleClickAddCart }) => {
 	const CARD_MENU = [
 		{
 			name: 'CHEESE DOUBLE HAMBURGER',
-			price: 31.99,
+			price: 18.99,
 			img: BURGER_1,
 			stars: 5,
 			id: 1,
@@ -22,7 +22,7 @@ const Menu = ({ handleClickAddCart }) => {
 		},
 		{
 			name: 'BACON EGG HAMBURGER',
-			price: 25.99,
+			price: 8.99,
 			img: BURGER_2,
 			stars: 3,
 			id: 2,
@@ -31,7 +31,7 @@ const Menu = ({ handleClickAddCart }) => {
 		},
 		{
 			name: 'VEGETARIAN HAMBURGER',
-			price: 29.99,
+			price: 15.99,
 			img: BURGER_3,
 			stars: 4,
 			id: 3,
@@ -40,7 +40,7 @@ const Menu = ({ handleClickAddCart }) => {
 		},
 		{
 			name: 'BIG HAMBURGER DOUBLE',
-			price: 37.99,
+			price: 9.99,
 			img: BURGER_4,
 			stars: 5,
 			id: 4,
@@ -49,7 +49,7 @@ const Menu = ({ handleClickAddCart }) => {
 		},
 		{
 			name: 'HAMBURGER CHEESE FISH',
-			price: 32.99,
+			price: 12.99,
 			img: BURGER_5,
 			stars: 5,
 			id: 5,
@@ -58,7 +58,7 @@ const Menu = ({ handleClickAddCart }) => {
 		},
 		{
 			name: 'CUCUMBER HAMBURGER',
-			price: 23.99,
+			price: 11.99,
 			img: BURGER_6,
 			stars: 3,
 			id: 6,
