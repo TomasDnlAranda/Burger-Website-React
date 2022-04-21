@@ -9,7 +9,7 @@ import { MdClear as IconClear } from 'react-icons/md';
 import MenuResponsive from './MenuResponsive';
 import CartFoot from './CartFoot';
 
-const Navbar = ({ badge, cartFood }) => {
+const Navbar = ({ badge, cartFood, deleteAmountProduct, filterProduct }) => {
 	const [clickSearch, setClickSearch] = useState(false);
 	const [clickMenu, setClickMenu] = useState(false);
 	const [clickCartFood, setCartFood] = useState(false);
@@ -124,7 +124,12 @@ const Navbar = ({ badge, cartFood }) => {
 				clickSearch={clickSearch}
 				handleChangeStateMenu={handleChangeStateMenu}
 			/>
-			<CartFoot clickCartFood={clickCartFood} cartFood={cartFood} />
+			<CartFoot
+				clickCartFood={clickCartFood}
+				cartFood={cartFood}
+				deleteAmountProduct={deleteAmountProduct}
+				filterProduct={filterProduct}
+			/>
 		</>
 	);
 };

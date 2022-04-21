@@ -23,6 +23,7 @@ code {
 	--color-burger: #e3cb57;
 	--color-secondary: rgb(182, 182, 182);
 	--color-yellow: #f5cd06;
+	--color-red: rgb(226, 0, 0);
 }
 
 body::-webkit-scrollbar {

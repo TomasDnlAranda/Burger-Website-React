@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/cartfoot.css';
 import ProductCartFoot from './ProductCartFoot';
 
-const CartFoot = ({ clickCartFood, cartFood }) => {
+const CartFoot = ({ clickCartFood, cartFood, deleteAmountProduct, filterProduct }) => {
 	return (
 		<div className={clickCartFood ? 'cart-foot__appear' : 'cart-foot__hide'}>
 			<div className="cart-foot__container-title">
@@ -10,7 +10,12 @@ const CartFoot = ({ clickCartFood, cartFood }) => {
 			</div>
 			<div className="cart-foot__container-cart">
 				{cartFood.map((item) => (
-					<ProductCartFoot item={item} key={item.id} />
+					<ProductCartFoot
+						item={item}
+						key={item.id}
+						deleteAmountProduct={deleteAmountProduct}
+						filterProduct={filterProduct}
+					/>
 				))}
 			</div>
 		</div>
