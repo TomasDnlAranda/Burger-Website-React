@@ -118,7 +118,7 @@ const Navbar = ({ badge, cartFood, deleteAmountProduct, filterProduct, totalProd
 					</div>
 				</nav>
 			</header>
-			<SearchNavbar clickSearch={clickSearch} clickMenu={clickMenu} totalProduct={totalProduct} />
+			<SearchNavbar clickSearch={clickSearch} totalProduct={totalProduct} />
 			<MenuResponsive
 				clickMenu={clickMenu}
 				clickSearch={clickSearch}

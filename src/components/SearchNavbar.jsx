@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaSearch as IconSearch } from 'react-icons/fa';
 import { useSearchParams } from 'react-router-dom';
 import '../css/searchnavbar.css';
 import SearchProduct from './SearchProduct';
@@ -24,11 +23,14 @@ const SearchNavbar = ({ clickSearch, totalProduct }) => {
 						onChange={handleChange}
 					/>
 				</div>
-				<div className="search-navbar__container-icon">
-					<IconSearch className="search-navbar__icon" />
-				</div>
 			</div>
-			<div className="search-navbar__container-search">
+			<div
+				className={
+					clickSearch
+						? 'search-navbar__container-search'
+						: 'search-navbar__container-search-esconde'
+				}
+			>
 				{clickSearch
 					? totalProduct
 							.filter((item) => {

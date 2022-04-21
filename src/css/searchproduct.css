@@ -21,3 +21,20 @@
 	margin-right: 1.5rem;
 	width: 30px;
 }
+
+@media all and (max-width: 500px) {
+	.search-product__icon {
+		font-size: 0.8rem;
+		margin-right: 0.75rem;
+		margin-left: 0.85rem;
+	}
+
+	.search-product img {
+		height: 30px;
+		margin-right: 0.75rem;
+		width: 30px;
+	}
+	.search-product h3 {
+		margin-right: 0.75rem;
+	}
+}
