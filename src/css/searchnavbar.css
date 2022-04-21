@@ -3,7 +3,7 @@
 	flex-direction: row;
 	background: var(--color-dark-);
 	color: var(--color-white);
-	padding: 0.5rem 0;
+	padding: 0.85rem 0;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -18,7 +18,7 @@
 	flex-direction: row;
 	background: var(--color-dark-);
 	color: var(--color-white);
-	padding: 0.5rem 0;
+	padding: 0.85rem 0;
 	position: fixed;
 	width: 100%;
 	top: 56px;
@@ -56,4 +56,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.search-navbar__icon:hover {
+	color: var(--color-burger);
+	cursor: pointer;
+}
+
+.search-navbar__container-search {
+	position: fixed;
+	top: 108px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
 }
