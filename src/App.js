@@ -31,10 +31,28 @@ function App() {
 			setCartFood(toUpdate);
 		}
 	};
+
+	const deleteAmountProduct = (id) => {
+		const toUpdate = cartFood.map((item) =>
+			item.id === id ? { ...item, amount: item.amount - 1 } : item
+		);
+		setCartFood(toUpdate);
+		setBadge(badge - 1);
+	};
+
+	const filterProduct = () => {
+		const toUpdate = cartFood.filter((item) => item.amount !== 0);
+		setCartFood(toUpdate);
+	};
 	return (
 		<>
 			<div className="app__container">
-				<Navbar badge={badge} cartFood={cartFood} />
+				<Navbar
+					badge={badge}
+					cartFood={cartFood}
+					deleteAmountProduct={deleteAmountProduct}
+					filterProduct={filterProduct}
+				/>
 				<Main />
 				<Menu handleClickAddCart={handleClickAddCart} />
 				<AboutUs />

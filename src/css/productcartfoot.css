@@ -10,6 +10,7 @@
 .product-cart-foot__img {
 	width: 35px;
 	height: 35px;
+	margin-left: 0.75rem;
 }
 
 .product-cart-foot__container-img {
@@ -17,7 +18,7 @@
 }
 
 .product-cart-foot__name {
-	width: 50%;
+	width: 45%;
 	margin: 0;
 }
 
@@ -27,5 +28,11 @@
 }
 
 .product-cart-foot__price {
-	width: 25%;
+	width: 20%;
+}
+
+.product-cart-foot__del {
+	width: 10%;
+	font-size: 1rem;
+	color: var(--color-red);
 }
