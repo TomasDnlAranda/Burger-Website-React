@@ -4,7 +4,9 @@
 	padding-top: 4.5rem;
 	user-select: none;
 }
-
+.swiper-wrapper {
+	overflow: hidden;
+}
 .customers-reviews__container-text {
 	display: flex;
 	justify-content: center;

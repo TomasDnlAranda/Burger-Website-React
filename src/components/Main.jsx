@@ -52,9 +52,6 @@ const Main = () => {
 					ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 					sed do eiusmod tempor incididu
 				</p>
-				<a href="#aa" className="main__btn" data-aos="fade-up" data-aos-delay="600">
-					Our Menu
-				</a>
 			</div>
 			<div className="main__container-card"></div>
 			<div className="main__container-cards">
