@@ -8,6 +8,8 @@ import Navbar from './components/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import DailyPosts from './components/DailyPosts';
+import 'swiper/css/bundle';
+import 'swiper/css';
 import Footer from './components/Footer';
 import BURGER_1 from './image/product-1.png';
 import BURGER_2 from './image/product-2.png';

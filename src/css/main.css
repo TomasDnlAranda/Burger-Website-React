@@ -5,7 +5,6 @@ main {
 	padding-top: 4rem;
 	z-index: -100;
 	position: relative;
-	user-select: none;
 }
 
 .main__container-img {
@@ -38,12 +37,17 @@ main {
 	line-height: 1.8;
 	text-align: center;
 }
-.main__btn:hover {
-	color: var(--color-dark-);
-	background-color: var(--color-white);
+
+.main__container-cards {
+	display: flex;
+	flex-direction: column;
 }
 
-.main__btn {
+.main__container-cards {
+	margin: 1.5rem 0;
+}
+
+.main__container-text a {
 	color: var(--color-white);
 	background: inherit;
 	border: 1px solid var(--color-white);
@@ -55,13 +59,10 @@ main {
 	text-decoration: none;
 }
 
-.main__container-cards {
-	display: flex;
-	flex-direction: column;
-}
-
-.main__container-cards {
-	margin: 1.5rem 0;
+.main__container-text a:hover {
+	color: var(--color-dark-);
+	background-color: var(--color-white);
+	cursor: pointer;
 }
 
 @media all and (min-width: 550px) {
@@ -95,9 +96,22 @@ main {
 		text-align: center;
 	}
 
-	.main__btn {
-		padding: 10px 50px;
+	.main__container-text a {
+		color: var(--color-white);
+		background: inherit;
+		border: 1px solid var(--color-white);
+		width: max-content;
+		padding: 7.5px 25px;
 		margin: 0.5rem auto 0;
+		cursor: pointer;
+		transition: all 0.5s;
+		text-decoration: none;
+	}
+
+	.main__container-text a:hover {
+		color: var(--color-dark-);
+		background-color: var(--color-white);
+		cursor: pointer;
 	}
 
 	.main__container-cards {
